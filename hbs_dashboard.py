@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 st.title("🔴 Hapoel Beer Sheva Youth - Match Dashboard")
 
 # Load data
-df = pd.read_excel(r"C:\Users\WIN10\.spyder-py3\spyder - python projects michael\HBS_Youth_Sample_Match_Data.xlsx")
+df = pd.read_excel("HBS_Youth_Sample_Match_Data.xlsx")
 
 # Sidebar
 st.sidebar.header("Filters")
@@ -122,3 +122,4 @@ col3.metric("Total Shots", total_shots)
 col4.metric("Total Passes", total_passes)
 
 #http://localhost:8501/#shot-map
+
